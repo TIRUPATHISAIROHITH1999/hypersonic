@@ -1,0 +1,81 @@
+/* Center button container */
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  /* Base styles for skewed buttons */
+  .skew-button {
+    background-color: #007bff; /* Primary Bootstrap blue */
+    color: #fff; /* White text */
+    font-size: 1rem; /* Font size */
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transform: skew(-10deg); /* Apply skew effect */
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  /* Adjust alignment of text inside the button */
+  .skew-button span {
+    display: inline-block;
+    transform: skew(10deg); /* Counter skew to align text */
+  }
+  
+  /* Enquiry button styles */
+  .skew-button.enquiry {
+    background-color: #28a745; /* Green */
+    width: 200px;
+  }
+  
+  .skew-button.enquiry:hover {
+    background-color: #218838; /* Darker green on hover */
+    width: 500px;
+  }
+  
+  /* Book Now button styles */
+  .skew-button.book-now {
+    background-color: #ffc107; /* Yellow */
+    color: #212529; /* Dark text for contrast */
+    width: 200px;
+  }
+  
+  .skew-button.book-now:hover {
+    background-color: #e0a800; /* Darker yellow on hover */
+    width: 500px;
+  }
+  
+  /* Troubleshoot button styles */
+  .skew-button.troubleshoot {
+    background-color: #dc3545; /* Red */
+    width: 200px;
+  }
+  
+  .skew-button.troubleshoot:hover {
+    background-color: #c82333; /* Darker red on hover */
+    width: 500px;
+  }
+  
+  /* Hover effect for all buttons */
+  .skew-button:hover {
+    transform: scale(1.05) skew(-10deg); /* Slight scale-up on hover */
+    width: 500px;
+  }
+
+  .labelC{
+    color: black;
+    font-weight: 800;
+  }
+  .labelP{
+    /* color: rgb(106, 40, 40); */
+    padding: 5px;
+    border: 0px solid ;
+    background-color: rgba(0, 0, 0, 0.597);
+    font-size: 25px;
+    transform: skew(-10deg);
+  }
+  

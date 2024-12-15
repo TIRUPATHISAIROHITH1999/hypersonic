@@ -21,7 +21,7 @@ function Navbar() {
             className="me-auto my-2 my-lg-0 nav-scroll"
             navbarScroll
           >
-            <Nav.Link as={Link} to="/" className="text-white">
+            <Nav.Link as={Link} to="hypersonic/" className="text-white">
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/tv" className="text-white">

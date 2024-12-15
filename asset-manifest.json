@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/hypersonic/static/css/main.a4baf9c1.css",
+    "main.js": "/hypersonic/static/js/main.f4c50717.js",
+    "static/media/mthree.jpg": "/hypersonic/static/media/mthree.102d7ec769895001221e.jpg",
+    "static/media/wfive.jpg": "/hypersonic/static/media/wfive.5475ed233cb0eb643f48.jpg",
+    "static/media/tvsix.jpg": "/hypersonic/static/media/tvsix.5909f0f8b5f98e144d44.jpg",
+    "static/media/tvfive.jpg": "/hypersonic/static/media/tvfive.5bfcb51a06d0ec6cc721.jpg",
+    "static/media/wtwo.jpg": "/hypersonic/static/media/wtwo.8ff5a59932a2d9062415.jpg",
+    "static/media/oneC.jpg": "/hypersonic/static/media/oneC.731f36c4c02e97b1bd71.jpg",
+    "static/media/aone.jpg": "/hypersonic/static/media/aone.c71e551cabe61c2985c0.jpg",
+    "static/media/wfour.jpg": "/hypersonic/static/media/wfour.bbb6d72969bdecb84137.jpg",
+    "static/media/tvthree.jpg": "/hypersonic/static/media/tvthree.536c6466eaece9e8250f.jpg",
+    "static/media/tvtwo.jpg": "/hypersonic/static/media/tvtwo.1622143ad38a569f14a4.jpg",
+    "static/media/mfive.jpg": "/hypersonic/static/media/mfive.f55d61ff91d9aa3be99d.jpg",
+    "static/media/msix.jpg": "/hypersonic/static/media/msix.f5ab93596d5e31f3fa5c.jpg",
+    "static/media/mone.jpg": "/hypersonic/static/media/mone.dcf1c2d6fe2c13338522.jpg",
+    "static/media/tvfour.jpg": "/hypersonic/static/media/tvfour.95d3b0360838f09484cc.jpg",
+    "static/media/wone.jpg": "/hypersonic/static/media/wone.7abca3e30f6d12dffe1b.jpg",
+    "static/media/wthree.jpg": "/hypersonic/static/media/wthree.dc6a25d61c4a75e9f3b5.jpg",
+    "static/media/wsix.jpg": "/hypersonic/static/media/wsix.cf75383ccde6a47e7a65.jpg",
+    "static/media/athree.jpg": "/hypersonic/static/media/athree.924026a006550ba6b083.jpg",
+    "static/media/atwo.jpg": "/hypersonic/static/media/atwo.3a38912a0f55ec117ac2.jpg",
+    "static/media/afour.jpg": "/hypersonic/static/media/afour.4c0bde8df3b6d6955a96.jpg",
+    "static/media/mtwo.jpg": "/hypersonic/static/media/mtwo.13ca3d7bfbbda76e306d.jpg",
+    "static/media/tvone.jpg": "/hypersonic/static/media/tvone.1e747c8a12c811e77ed7.jpg",
+    "static/media/afive.jpg": "/hypersonic/static/media/afive.bbef7db45e35f829e220.jpg",
+    "static/media/asix.jpg": "/hypersonic/static/media/asix.3114a6855f8f56369671.jpg",
+    "static/media/twoC.jpg": "/hypersonic/static/media/twoC.1f532d37ee8d1835ed40.jpg",
+    "static/media/mfour.jpg": "/hypersonic/static/media/mfour.437677bf193d0eb95a90.jpg",
+    "static/media/threeC.avif": "/hypersonic/static/media/threeC.897c62cdc955ecb79660.avif",
+    "index.html": "/hypersonic/index.html",
+    "main.a4baf9c1.css.map": "/hypersonic/static/css/main.a4baf9c1.css.map",
+    "main.f4c50717.js.map": "/hypersonic/static/js/main.f4c50717.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4baf9c1.css",
+    "static/js/main.f4c50717.js"
+  ]
+}

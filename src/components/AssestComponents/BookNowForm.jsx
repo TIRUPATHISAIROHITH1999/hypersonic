@@ -3,15 +3,19 @@ import "../../componentsCss/BookNowModal.css";
 import { AppContext } from '../../App';
 
 function BookNowForm({ onClose }) {
-  const {setBook}=useContext(AppContext);
+  const { setBook } = useContext(AppContext);
   const [formData, setFormData] = useState({
     name: '',
     phone: '',
     email: '',
     address: '',
+    service: '', // Added service field
+    preferredDate: '', // Added preferredDate field
+    preferredTime: '', // Added preferredTime field
+    comments: '', // Added comments field
     file1: null,
     file2: null,
-    annualMaintenance: false, // Add state for the checkbox
+    annualMaintenance: false, 
   });
 
   const handleInputChange = (e) => {
@@ -42,7 +46,6 @@ function BookNowForm({ onClose }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form Data:', formData);
-    //here we need at setstate from context api
     setBook((prevBook) => [...prevBook, formData]);
     onClose();
   };
@@ -70,12 +73,16 @@ function BookNowForm({ onClose }) {
             <textarea name="address" value={formData.address} onChange={handleInputChange} required></textarea>
           </label>
           <label>
-            Upload Image 1:
-            <input type="file" name="file1" onChange={handleFileChange} />
-          </label>
-          <label>
-            Upload Image 2:
-            <input type="file" name="file2" onChange={handleFileChange} />
+            Service:
+            <select name="service" value={formData.service} onChange={handleInputChange} required>
+              <option value="">Select a service</option>
+              <option value="Television Repair">Television Repair</option>
+              <option value="Washing Machine Repair">Washing Machine Repair</option>
+              <option value="Microwave Oven Repair">Microwave Oven Repair</option>
+              <option value="Television Installation">Television Installation</option>
+              <option value="Washing Machine Installation">Washing Machine Installation</option>
+              <option value="Microwave Oven Installation">Microwave Oven Installation</option>
+            </select>
           </label>
           <div className="booknow-checkbox-container">
             <input
@@ -86,6 +93,36 @@ function BookNowForm({ onClose }) {
             />
             I agree to the annual maintenance charges
           </div>
+          <div className="booknow-checkbox-container">
+            <input
+              type="checkbox"
+              name="annualMaintenance"
+              checked={formData.annualMaintenance}
+              onChange={handleCheckboxChange}
+            />
+            I agree to proceed with initial charges of 300/-
+          </div>
+          <label>
+            Preferred Date:
+            <input type="date" name="preferredDate" value={formData.preferredDate} onChange={handleInputChange} required />
+          </label>
+          <label>
+            Preferred Time:
+            <input type="time" name="preferredTime" value={formData.preferredTime} onChange={handleInputChange} required />
+          </label>
+          <label>
+            Comments:
+            <textarea name="comments" value={formData.comments} onChange={handleInputChange}></textarea>
+          </label>
+          <label>
+            Upload Image 1:
+            <input type="file" name="file1" onChange={handleFileChange} />
+          </label>
+          <label>
+            Upload Image 2:
+            <input type="file" name="file2" onChange={handleFileChange} />
+          </label>
+         
           <button type="submit">Submit</button>
         </form>
       </div>

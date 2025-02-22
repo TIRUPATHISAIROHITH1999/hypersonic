@@ -32,7 +32,7 @@ function TroubleshootCards() {
             <p><strong>Description:</strong> {item.description}</p>
             <p><strong>Status:</strong> {item.status}</p>
             <div className="troubleshoot-card-actions">
-              <button onClick={() => alert('Troubleshoot action for ' + item.issue)}>Troubleshoot</button>
+              {/* <button onClick={() => alert('Troubleshoot action for ' + item.issue)}>Troubleshoot</button> */}
               <button onClick={() => openModal(item)}>View Details</button>
             </div>
           </div>

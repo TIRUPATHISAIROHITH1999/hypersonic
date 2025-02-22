@@ -1,12 +1,12 @@
-import React from 'react';
-import Button from 'react-bootstrap/Button';
-import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
-import Nav from 'react-bootstrap/Nav';
-import NavbarComponent from 'react-bootstrap/Navbar'; // Renamed to avoid conflict
-import { Link } from 'react-router-dom';
+import React from "react";
+import Button from "react-bootstrap/Button";
+import Container from "react-bootstrap/Container";
+import Form from "react-bootstrap/Form";
+import Nav from "react-bootstrap/Nav";
+import NavbarComponent from "react-bootstrap/Navbar"; // Renamed to avoid conflict
+import { Link } from "react-router-dom";
 
-import '../componentsCss/NavbarCss.css';
+import "../componentsCss/NavbarCss.css";
 
 function Navbar() {
   return (
@@ -17,10 +17,7 @@ function Navbar() {
         </NavbarComponent.Brand>
         <NavbarComponent.Toggle aria-controls="navbarScroll" />
         <NavbarComponent.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0 nav-scroll"
-            navbarScroll
-          >
+          <Nav className="me-auto my-2 my-lg-0 nav-scroll" navbarScroll>
             <Nav.Link as={Link} to="hypersonic/" className="text-white">
               Home
             </Nav.Link>
@@ -31,19 +28,26 @@ function Navbar() {
               Washing-Machine
             </Nav.Link>
             <Nav.Link as={Link} to="/microwave" className="text-white">
-              Owen
+              Microwave
             </Nav.Link>
             <Nav.Link as={Link} to="/aircondition" className="text-white">
               Air-Conditioner
             </Nav.Link>
+            <Nav.Link as={Link} to="/Refridgerater" className="text-white">
+            Refridgerater
+            </Nav.Link>
+            {/* <Nav.Link as={Link} to="/products" className="text-white">
+              Products
+            </Nav.Link> */}
+            {/* <Nav.Link as={Link} to="/blogs" className="text-white">
+              Blogs
+            </Nav.Link> */}
             <Nav.Link as={Link} to="/book-now" className="text-white">
               Book-Now
             </Nav.Link>
             <Nav.Link as={Link} to="/troubleshoot" className="text-white">
               Trouble-Shoot
             </Nav.Link>
-           
-          
           </Nav>
           <Form className="d-flex">
             <Form.Control

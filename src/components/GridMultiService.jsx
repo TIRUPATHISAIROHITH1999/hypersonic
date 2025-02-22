@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import '../componentsCss/GridMultiService.css'; // Import the custom CSS file
+import React, { useState } from "react";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import "../componentsCss/GridMultiService.css"; // Import the custom CSS file
+import { Link } from "react-router-dom";
 
 function GridMultiService() {
   const [isPlayingVideo1, setIsPlayingVideo1] = useState(false); // State to control video 1 play status
@@ -49,7 +50,10 @@ function GridMultiService() {
         <Col>
           <div className="banner-text">
             <h2>Our Services</h2>
-            <p>Explore our expert repair services with top-notch quality and quick turnaround.</p>
+            <p>
+              Explore our expert repair services with top-notch quality and
+              quick turnaround.
+            </p>
           </div>
         </Col>
       </Row>
@@ -59,20 +63,23 @@ function GridMultiService() {
         {/* First YouTube Video (Left) */}
         <Col xs={12} md={6} lg={6} xl={6}>
           <div
-            className={`video-container ${isPlayingVideo1 ? 'expanded' : ''}`}
+            className={`video-container ${isPlayingVideo1 ? "expanded" : ""}`}
             onMouseEnter={handleMouseEnterVideo1}
             onMouseLeave={handleMouseLeaveVideo1}
           >
             <iframe
               width="100%"
               height="100%"
-              src={`https://www.youtube.com/embed/IyCqW-g53fc?autoplay=${isPlayingVideo1 ? '1' : '0'}`}
+              src={`https://www.youtube.com/embed/IyCqW-g53fc?autoplay=${
+                isPlayingVideo1 ? "1" : "0"
+              }`}
               title="YouTube video 1"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-            {isPlayingVideo1 && <div className="overlay"></div>} {/* Show overlay when video is playing */}
+            {isPlayingVideo1 && <div className="overlay"></div>}{" "}
+            {/* Show overlay when video is playing */}
           </div>
         </Col>
 
@@ -86,8 +93,13 @@ function GridMultiService() {
                 className="service-image"
               />
               <h5>Washing Machine</h5>
-              <p>We offer expert services for all types of washing machines, ensuring efficiency and durability.</p>
-              <button className="service-button">Book Now</button>
+              <p>
+                We offer expert services for all types of washing machines,
+                ensuring efficiency and durability.
+              </p>
+              <Link to="/washing">
+                <button className="service-button">Find More</button>
+              </Link>
             </div>
             <div className="service-card">
               <img
@@ -96,8 +108,13 @@ function GridMultiService() {
                 className="service-image"
               />
               <h5>AC Repair</h5>
-              <p>Our technicians are skilled in repairing air conditioners of all makes and models for better cooling performance.</p>
-              <button className="service-button">Book Now</button>
+              <p>
+                Our technicians are skilled in repairing air conditioners of all
+                makes and models for better cooling performance.
+              </p>
+              <Link to="/aircondition">
+                <button className="service-button">Find More</button>
+              </Link>
             </div>
           </div>
         </Col>
@@ -115,8 +132,13 @@ function GridMultiService() {
                 className="service-image"
               />
               <h5>TV Repair</h5>
-              <p>We offer professional repair services for your TV, restoring your viewing experience to its fullest.</p>
-              <button className="service-button">Book Now</button>
+              <p>
+                We offer professional repair services for your TV, restoring
+                your viewing experience to its fullest.
+              </p>
+              <Link to="/tv">
+                <button className="service-button">Find More</button>
+              </Link>
             </div>
             <div className="service-card">
               <img
@@ -125,8 +147,13 @@ function GridMultiService() {
                 className="service-image"
               />
               <h5>Microwave Oven</h5>
-              <p>Quick and reliable repair services for microwave ovens, ensuring optimal functionality.</p>
-              <button className="service-button">Book Now</button>
+              <p>
+                Quick and reliable repair services for microwave ovens, ensuring
+                optimal functionality.
+              </p>
+              <Link to="/microwave">
+                <button className="service-button">Find More</button>
+              </Link>
             </div>
           </div>
         </Col>
@@ -134,20 +161,23 @@ function GridMultiService() {
         {/* Second YouTube Video (Right) */}
         <Col xs={12} md={6} lg={6} xl={6}>
           <div
-            className={`video-container ${isPlayingVideo2 ? 'expanded' : ''}`}
+            className={`video-container ${isPlayingVideo2 ? "expanded" : ""}`}
             onMouseEnter={handleMouseEnterVideo2}
             onMouseLeave={handleMouseLeaveVideo2}
           >
             <iframe
               width="100%"
               height="100%"
-              src={`https://www.youtube.com/embed/l07RGT3ucFs?autoplay=${isPlayingVideo2 ? '1' : '0'}`}
+              src={`https://www.youtube.com/embed/l07RGT3ucFs?autoplay=${
+                isPlayingVideo2 ? "1" : "0"
+              }`}
               title="YouTube video 2"
               frameBorder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
-            {isPlayingVideo2 && <div className="overlay"></div>} {/* Show overlay when video is playing */}
+            {isPlayingVideo2 && <div className="overlay"></div>}{" "}
+            {/* Show overlay when video is playing */}
           </div>
         </Col>
       </Row>

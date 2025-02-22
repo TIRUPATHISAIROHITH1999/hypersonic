@@ -13,14 +13,19 @@ import TvComponent from "./components/TvComponent";
 import WashingMachine from "./components/WashingMachine";
 import MicroWave from "./components/MicroWave";
 import AirConditioner from "./components/AirConditioner";
+import { ProductData } from "./ProductData";
+import AllProducts from "./components/AllProducts";
+import Refridgerater from "./components/Refridgerater"
 
 // Context Resource
 import { createContext } from "react";
+
 
 // Context Functionality
 export const AppContext = createContext();
 
 function App() {
+  // console.log(ProductData);
   // --> book now
   const [book, setBook] = useState([
     {
@@ -108,7 +113,14 @@ function App() {
           <Route path="/microwave" element={<MicroWave />} />
 
           {/* Tvcomponent Page */}
+          <Route path="/Refridgerater" element={<Refridgerater />} />
+
+          {/* Tvcomponent Page */}
           <Route path="/aircondition" element={<AirConditioner />} />
+
+           {/* All products Page */}
+           <Route path="/products" element={<AllProducts/>} />
+
         </Routes>
         <Footer />
       </Router>

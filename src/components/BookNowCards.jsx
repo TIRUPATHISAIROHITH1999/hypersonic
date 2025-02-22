@@ -38,8 +38,8 @@ function BookNowCards() {
             <p><strong>Comments:</strong> {item.comments || "N/A"}</p>
             
             <div className="booknow-card-actions">
-              <button onClick={() => alert("Book Now action for " + item.name)}>Reject</button>
-              <button onClick={() => alert("Enquire action for " + item.name)}>Forward</button>
+              {/* <button onClick={() => alert("Book Now action for " + item.name)}>Reject</button>
+              <button onClick={() => alert("Enquire action for " + item.name)}>Forward</button> */}
               <button onClick={() => openModal(item)}>View Details</button>
             </div>
           </div>

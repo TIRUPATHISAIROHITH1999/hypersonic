@@ -181,6 +181,84 @@ function GridMultiService() {
           </div>
         </Col>
       </Row>
+
+
+      {/* hahd extendion  */}
+            {/* Row for First YouTube Video and Data */}
+            <Row className="align-items-center">
+        {/* First YouTube Video (Left) */}
+        <Col xs={12} md={6} lg={6} xl={6}>
+          <div
+            className={`video-container ${isPlayingVideo1 ? "expanded" : ""}`}
+            onMouseEnter={handleMouseEnterVideo1}
+            onMouseLeave={handleMouseLeaveVideo1}
+          >
+            <iframe
+              width="100%"
+              height="100%"
+              src={`https://www.youtube.com/embed/IyCqW-g53fc?autoplay=${
+                isPlayingVideo1 ? "1" : "0"
+              }`}
+              title="YouTube video 1"
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
+            {isPlayingVideo1 && <div className="overlay"></div>}{" "}
+            {/* Show overlay when video is playing */}
+          </div>
+        </Col>
+
+        {/* Data (Right) */}
+        <Col xs={12} md={6} lg={6} xl={6}>
+          <div className="service-container">
+            <div className="service-card">
+              <img
+                src="https://images.pexels.com/photos/3829549/pexels-photo-3829549.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" // Placeholder image for Washing Machine
+                alt="Washing Machine"
+                className="service-image"
+              />
+              <h5>DishWasher</h5>
+              <p>
+                We offer expert services for all types of DishWasher,
+                ensuring efficiency and durability.
+              </p>
+              <Link to="/DishWasher">
+                <button className="service-button">Find More</button>
+              </Link>
+            </div>
+            <div className="service-card">
+              <img
+                src="https://images.pexels.com/photos/2343467/pexels-photo-2343467.jpeg?auto=compress&cs=tinysrgb&w=600" // Placeholder image for AC
+                alt="Air Conditioner"
+                className="service-image"
+              />
+              <h5>Refridgerator</h5>
+              <p>
+                Our technicians are skilled in repairing air conditioners of all
+                makes and models for better cooling performance.
+              </p>
+              <Link to="/Refridgerater">
+                <button className="service-button">Find More</button>
+              </Link>
+            </div>
+          </div>
+        </Col>
+      </Row>
+
+      {/* hahd extension two */}
+
+
+
+
+
+
+
+
+
+
+
+
     </Container>
   );
 }

@@ -15,7 +15,8 @@ import MicroWave from "./components/MicroWave";
 import AirConditioner from "./components/AirConditioner";
 import { ProductData } from "./ProductData";
 import AllProducts from "./components/AllProducts";
-import Refridgerater from "./components/Refridgerater"
+import Refridgerater from "./components/Refridgerater";
+import Dishwasher from "./components/DishWasher";
 
 // Context Resource
 import { createContext } from "react";
@@ -114,6 +115,9 @@ function App() {
 
           {/* Tvcomponent Page */}
           <Route path="/Refridgerater" element={<Refridgerater />} />
+
+          {/* Tvcomponent Page */}
+          <Route path="/DishWasher" element={<Dishwasher />} />
 
           {/* Tvcomponent Page */}
           <Route path="/aircondition" element={<AirConditioner />} />

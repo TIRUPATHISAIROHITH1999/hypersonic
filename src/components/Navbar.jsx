@@ -36,6 +36,9 @@ function Navbar() {
             <Nav.Link as={Link} to="/Refridgerater" className="text-white">
             Refridgerater
             </Nav.Link>
+            <Nav.Link as={Link} to="/DishWasher" className="text-white">
+            Dish-Washer
+            </Nav.Link>
             {/* <Nav.Link as={Link} to="/products" className="text-white">
               Products
             </Nav.Link> */}

@@ -76,15 +76,18 @@ function BookNowForm({ onClose }) {
             Service:
             <select name="service" value={formData.service} onChange={handleInputChange} required>
               <option value="">Select a service</option>
-              <option value="Television Repair">Television Repair</option>
-              <option value="Washing Machine Repair">Washing Machine Repair</option>
-              <option value="Microwave Oven Repair">Microwave Oven Repair</option>
-              <option value="Television Installation">Television Installation</option>
-              <option value="Washing Machine Installation">Washing Machine Installation</option>
-              <option value="Microwave Oven Installation">Microwave Oven Installation</option>
+              {/* <option value="Television Repair">Television Repair</option> */}
+              {/* <option value="Washing Machine Repair">Washing Machine Repair</option> */}
+              {/* <option value="Microwave Oven Repair">Microwave Oven Repair</option> */}
+              <option value="Television service">Television service</option>
+              <option value="Washing Machine service">Washing Machine service</option>
+              <option value="Microwave Oven service">Microwave Oven service</option>
+              <option value="Refridgerator service">Refridgerator service</option>
+              <option value="Dishwasher service">DishWasher service</option>
+              <option value="AirConditioner service">AirConditioner service</option>
             </select>
           </label>
-          <div className="booknow-checkbox-container">
+          {/* <div className="booknow-checkbox-container">
             <input
               type="checkbox"
               name="annualMaintenance"
@@ -92,7 +95,7 @@ function BookNowForm({ onClose }) {
               onChange={handleCheckboxChange}
             />
             I agree to the annual maintenance charges
-          </div>
+          </div> */}
           <div className="booknow-checkbox-container">
             <input
               type="checkbox"

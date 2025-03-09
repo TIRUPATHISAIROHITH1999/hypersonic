@@ -182,10 +182,9 @@ function GridMultiService() {
         </Col>
       </Row>
 
-
       {/* hahd extendion  */}
-            {/* Row for First YouTube Video and Data */}
-            <Row className="align-items-center">
+      {/* Row for First YouTube Video and Data */}
+      <Row className="align-items-center">
         {/* First YouTube Video (Left) */}
         <Col xs={12} md={6} lg={6} xl={6}>
           <div
@@ -220,8 +219,8 @@ function GridMultiService() {
               />
               <h5>DishWasher</h5>
               <p>
-                We offer expert services for all types of DishWasher,
-                ensuring efficiency and durability.
+                We offer expert services for all types of DishWasher, ensuring
+                efficiency and durability.
               </p>
               <Link to="/DishWasher">
                 <button className="service-button">Find More</button>
@@ -247,18 +246,6 @@ function GridMultiService() {
       </Row>
 
       {/* hahd extension two */}
-
-
-
-
-
-
-
-
-
-
-
-
     </Container>
   );
 }

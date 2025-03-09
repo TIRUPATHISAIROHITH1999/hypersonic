@@ -16,6 +16,9 @@ function BookNowForm({ onClose }) {
     file1: null,
     file2: null,
     annualMaintenance: false, 
+    amcCondition:'',
+    companyMake:'',
+    customMake:'',
   });
 
   const handleInputChange = (e) => {
@@ -57,11 +60,11 @@ function BookNowForm({ onClose }) {
         <h2>Book Now</h2>
         <form className="booknow-form" onSubmit={handleSubmit}>
           <label>
-            Name:
+            Name*:
             <input type="text" name="name" value={formData.name} onChange={handleInputChange} required />
           </label>
           <label>
-            Phone:
+            Phone*:
             <input type="tel" name="phone" value={formData.phone} onChange={handleInputChange} required />
           </label>
           <label>
@@ -69,11 +72,11 @@ function BookNowForm({ onClose }) {
             <input type="email" name="email" value={formData.email} onChange={handleInputChange} />
           </label>
           <label>
-            Address:
+            Address*:
             <textarea name="address" value={formData.address} onChange={handleInputChange} required></textarea>
           </label>
           <label>
-            Service:
+            Service*:
             <select name="service" value={formData.service} onChange={handleInputChange} required>
               <option value="">Select a service</option>
               {/* <option value="Television Repair">Television Repair</option> */}
@@ -87,6 +90,47 @@ function BookNowForm({ onClose }) {
               <option value="AirConditioner service">AirConditioner service</option>
             </select>
           </label>
+
+          {/* hahd start */}
+          <label>
+            Amc Status*:
+            <select name="amcCondition" value={formData.amcCondition} onChange={handleInputChange} required>
+            <option value="">Select Status</option>
+              <option value="Under Amc">Under Amc</option>
+              <option value="Amc Expired">Amc Expired</option>
+              <option value="Under Warranty">Under Warranty</option>
+              <option value="Warranty Expired">Warranty Expired</option>
+              {/* <option value="Dishwasher service">DishWasher service</option> */}
+              {/* <option value="AirConditioner service">AirConditioner service</option> */}
+            </select>
+          </label>
+          {/* hahd end */}
+         
+
+           {/* hahd start */}
+           <label>
+            Company Make*:
+            <select name="companyMake" value={formData.companyMake} onChange={handleInputChange} required>
+            <option value="">Select company</option>
+              <option value="LG">LG</option>
+              <option value="SAMSUNG">SAMSUNG</option>
+              <option value="PANASONIC">PANASONIC</option>
+              <option value="HAIER">HAIER</option>
+              <option value="OTHERS">OTHERS</option>
+              {/* <option value="Dishwasher service">DishWasher service</option> */}
+              {/* <option value="AirConditioner service">AirConditioner service</option> */}
+            </select>
+          </label>
+          {/* hahd end */}
+
+          {formData.companyMake==="OTHERS" &&<label>
+            provide your product make:
+            <input type="text" name="otherProductMake" value={formData.customMake} onChange={handleInputChange}  />
+          </label>}
+
+        
+
+
           {/* <div className="booknow-checkbox-container">
             <input
               type="checkbox"
@@ -106,11 +150,11 @@ function BookNowForm({ onClose }) {
             I agree to proceed with initial charges of 300/-
           </div>
           <label>
-            Preferred Date:
+            Preferred Date*:
             <input type="date" name="preferredDate" value={formData.preferredDate} onChange={handleInputChange} required />
           </label>
           <label>
-            Preferred Time:
+            Preferred Time*:
             <input type="time" name="preferredTime" value={formData.preferredTime} onChange={handleInputChange} required />
           </label>
           <label>

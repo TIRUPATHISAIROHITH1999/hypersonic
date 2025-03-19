@@ -34,7 +34,7 @@ function Navbar() {
               Air-Conditioner
             </Nav.Link>
             <Nav.Link as={Link} to="/Refridgerater" className="text-white">
-            Refridgerater
+            Refrigerator
             </Nav.Link>
             <Nav.Link as={Link} to="/DishWasher" className="text-white">
             Dish-Washer
